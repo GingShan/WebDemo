@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Noto+Serif+TC:500,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/*
+    _黑體
+    font-family: 'Noto Sans TC', sans-serif;
+    _明體
+    font-family: 'Noto Serif TC', serif;
+
+    font-family: 'Cinzel', serif;
+
+*/
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: '微軟正黑體', 'Noto Sans TC', sans-serif;
+    font-size: 1.1rem;
+    scroll-behavior: smooth;
+}
+
+
+a {
+    color: #333;
+}
+
+a:hover,
+a:focus {
+    cursor: pointer;
+    color: #ea6000;
+    text-decoration: none;
+}
+
+button:focus,
+a:focus {
+    outline: none;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.fancybox-navigation {
+    height: 100vh;
+}
+
+
+.Imgiofo.top {
+    bottom: auto;
+    top: 10px;
+}
+
+a:hover .Imgiofo {
+    color: #fff;
+}
+
+p {
+    text-align: justify;
+}
+
+
+.innerImg {
+    width: 100%;
+    padding-top: 60%;
+}
+
+
+.innerImg .image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+.ImgIofo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    padding-top: 10%;
+    padding:5px 10px;
+    font-size: 14px;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 80%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 80%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 80%);
+}
+.ImgIofo:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00e";
+    margin-right: 3px;
+}
+
+
+
+.btn {
+    border-radius: 0;
+
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+    color: #fff;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #d44501;
+    border-color: #d44501;
+}
+
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #8a2d01;
+    border-color: #8a2d01;
+}
+
+
+.slick-next,
+.slick-prev {
+    width: auto;
+    height: auto;
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 0;
+    z-index: 1;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-size: 3rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 10px;
+
+}
+
+.slick-next,
+.slick-prev {}
+
+.slick-prev::before {
+    content: "<";
+}
+
+.slick-next::before {
+    content: ">";
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+    text-align: right;
+    top: 0;
+}
+
+.slick-dots {
+    left: 0;
+}
+
+
+.fancybox-navigation {
+    height: 100vh;
+}
+
+.fancybox-navigation .fancybox-button {
+    background: none;
+}
+
+
+.fancybox-navigation .fancybox-button div:before {
+    content: '>';
+    font-size: 3rem;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.fancybox-navigation .fancybox-button.fancybox-button--arrow_left div:before {
+    content: '<';
+}
+
+.fancybox-navigation .fancybox-button svg {
+    display: none;
+}
+.video .innerImg .image:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+
+.video:hover .innerImg .image:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    transition: all 0.5s;
+    background-color: rgba(0,0,0,0.5);
+}
+.video .play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+    padding-top: 10%;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../img/youtube.svg);
+    background-repeat: no-repeat;
+
+}

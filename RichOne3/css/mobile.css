@@ -1,0 +1,168 @@
+@media(max-width: 991px) {
+    .slick-dotted.slick-slider {
+        margin-bottom: 30px;
+    }
+
+    .Img .slick-dots {
+        bottom: -30px;
+    }
+
+    a .Imgiofo {
+        right: 5px;
+        bottom: 5px;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    a .Imgiofo.top {
+        bottom: auto;
+        top: 5px;
+    }
+
+    .TxtBox {
+        padding-top: 0.5rem;
+    }
+
+    .TxtBox .text .title {
+        text-align: center;
+    }
+
+    .fullscreen .TxtBox .text .title {
+        text-align: left;
+    }
+
+    .TxtBox .text .title span {
+        display: block;
+    }
+
+    .bannerArea .bannerBox {
+
+        padding-top: 10%;
+        align-content: flex-start;
+    }
+
+
+    .page {
+        padding: 10% 10px !important;
+    }
+
+    .pageBox {
+        min-height: auto;
+    }
+
+    .page.even .container-fluid {
+
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+
+
+    .Img .innerImg,
+    .page.even .Img .innerImg {
+        padding-top: 70%;
+        height: auto;
+        min-height: auto;
+    }
+
+    .page.intro,
+    .page.intro .bg_blurry {
+        -webkit-background-size: auto 60%;
+        background-size: auto 60%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+    }
+
+    .page.intro .Txt {
+        transform: translateY(-20%);
+    }
+
+    .page.intro .pageBox,
+    footer .pageBox {
+        min-height: 100vh;
+    }
+
+    .page.fullscreen .TxtBox .titleBox {
+        margin: 0 0 3rem auto;
+
+
+    }
+
+    .master {
+        /* display: none; */
+        margin-top: -10%;
+        margin-left: -10px;
+        -webkit-background-size: 110%;
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-image: url(../images/img/img06_m.png);
+
+        background-position: left top;
+    }
+
+    .CaseSlick .innerImg {
+        padding-top: 150%;
+
+    }
+
+    .CaseSlick .item {
+        padding: 10px;
+    }
+
+    .CaseSlick {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+
+    .CaseSlick .item .Txt .caseName {
+        font-size: 14px;
+    }
+
+    .CaseSlick .slick-dots li {
+        width: 30px;
+    }
+
+    .CaseSlick .slick-dots li button {
+        width: 100%;
+    }
+
+    .CaseSlick .slick-dots {
+        bottom: -30px;
+    }
+
+    .CaseSlick .slick-prev {
+        left: 0;
+    }
+
+    .CaseSlick .slick-next {
+        right: 0;
+    }
+
+    .CaseSlick .slick-next,
+    .CaseSlick .slick-prev {
+        width: auto;
+        height: auto;
+        z-index: 10;
+    }
+
+    footer {
+        padding-top: 10%;
+    }
+
+    footer .infoTxt h5 span {
+        display: block;
+    }
+
+    footer .outer:after {
+        content: '';
+        position: absolute;
+        left: -15px;
+        bottom: 0;
+        height: 100%;
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(226, 226, 226, 0.98) 60%);
+        background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(226, 226, 226, 0.98) 60%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(226, 226, 226, 0.98) 60%);
+        width: calc(100% + 15px);
+
+    }

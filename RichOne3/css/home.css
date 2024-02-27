@@ -1,0 +1,291 @@
+.navbar {
+    opacity: 0;
+}
+
+.page {
+    padding: 0 3%;
+    background-image: url(../images/bg.jpg);
+}
+
+.pageBox {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.TxtBox .titleBox {
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    font-family: 'Noto Serif TC', serif;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 6rem;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.TxtBox .titleBox b {
+    transform: rotate(-90deg);
+    display: inline-block;
+
+}
+
+.TxtBox .titleBox i {
+    font-style: normal;
+}
+
+.TxtBox .titleBox i:before {
+    content: 'HOLIN';
+    font-family: 'Cinzel', serif;
+
+    position: absolute;
+    right: 5px;
+    top: 100%;
+    opacity: 0.3;
+    -webkit-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+    font-size: 14px;
+    text-align: right;
+}
+
+.TxtBox .titleBox span {
+    display: block;
+    padding-top: 5rem;
+
+}
+
+.TxtBox .titleBox span:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #cc151d;
+}
+
+.TxtBox .text .title {
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    /*font-family: 'Noto Serif TC', serif;*/
+}
+
+.TxtBox .text .title span {
+    /*display: block;*/
+}
+
+.Img .innerImg {
+    padding: 0;
+    height: 80vh;
+}
+
+/*單數*/
+.page.odd:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*偶數*/
+.page.even {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.page.even .pageBox {
+    flex-direction: row-reverse;
+}
+
+.page.even .container-fluid {
+    padding: 0;
+    /*background-color: rgba(0,0,0,0.3);*/
+}
+
+.page.even .Img .innerImg {
+    min-height: 100vh;
+}
+
+
+/* page intro */
+.page.intro {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/intro_bg.png);
+    color: #fff;
+    background-color: #adcffc;
+}
+
+.page.intro:before,
+.page.intro:after {
+    content: '';
+    z-index: 1;
+    width: 3px;
+    height: 0;
+    background-color: #de9e57;
+    position: absolute;
+    transition: all 5s 1s;
+
+
+}
+
+.page.intro.active:before,
+.page.intro.active:after {
+    height: 100%;
+    transition: all 5s 1s;
+}
+
+.page.intro:before {
+    top: 0;
+    left: 5%;
+}
+
+.page.intro:after {
+
+    bottom: 0;
+    right: 5%;
+
+}
+
+.page.intro .bg_blurry {
+    position: absolute;
+    background-color: #adcffc;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/intro_bg_blurry.png);
+}
+
+.page.intro .bg_blurry:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.page.intro .Txt {
+
+    text-align: center;
+}
+
+.page.intro .Txt .titleBox {
+    font-family: 'Noto Serif TC', serif;
+    /*opacity: 0;*/
+
+}
+
+.page.intro .Txt .titleBox::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #de9e57;
+    display: block;
+    margin: 5% auto 9%;
+}
+
+.page.intro .Txt .titleBox span {
+    display: block;
+    font-size: 10px;
+    opacity: 0.5;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+.page.intro .Txt h3 {
+
+    /*opacity: 0;*/
+}
+
+.page.intro .Txt h3 b {
+    display: block;
+}
+
+.fullBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+
+.CaseSlick .item .Txt {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 6% 5%;
+    text-align: right;
+}
+
+.CaseSlick .item .Txt .caseName span {
+    /*display: block; */
+    font-size: 0.8rem;
+    font-weight: normal;
+
+
+}
+
+.CaseSlick .item .Txt .caseName span:after {
+    content: '｜';
+}
+
+.CaseSlick .item .Txt .caseName {
+    font-weight: bold;
+}
+
+.CaseSlick .item .innerImg .image:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+}
+
+
+/*teamList*/
+.teamList .item {
+    text-align: center;
+}
+
+.teamList .item .Img .innerImg {
+    width: 100%;
+    padding-top: 100%;
+    min-height: 0;
+    height: 0;
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+    -webkit-filter: grayscale(1);
+
+}
+
+.teamList .item h4 span {
+    display: block;
+    font-size: 0.9rem;
+}

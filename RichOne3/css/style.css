@@ -1,0 +1,669 @@
+body {
+    background-color: #fff;
+    color: #4E4E4E;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.Shadow {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    padding-top: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right top;
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.Anblock {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.Anblock::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 60%;
+    padding-top: 44%;
+    background-image: url(../images/Banner/leaves.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.Anblock .row {
+    width: 100%;
+    z-index: 3;
+}
+
+.BannerTxt {
+    width: 500px;
+    display: flex;
+    padding-bottom: 10%;
+    vertical-align: top;
+}
+
+.BannerTxt .Txtleft {
+    display: inline-block;
+    width: 10%;
+    height: 1px;
+    background-color: #4d4d4d;
+    vertical-align: top;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+
+.BannerTxt .Txtright {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.BannerTxt .content p {
+    color: #4d4d4d;
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+}
+
+.Anblock .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.Anblock .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+}
+
+.logoArea {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo {
+    width: 30%;
+    font-size: 0;
+    margin-right: 5%;
+}
+
+.logoTxt {
+    border-left: 1px solid #4d4d4d;
+    padding-left: 2%;
+}
+
+.logoTxt p {
+    font-size: 1.2rem;
+    color: #4d4d4d;
+    font-family: 'Noto Serif TC', serif;
+    line-height: 100%;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.logoTxt p:first-child {
+    padding-bottom: 3%;
+}
+
+.Mask {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.pic {
+    width: 100%;
+    padding-top: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+
+/* .Mask.visible {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+} */
+
+#pic.visible {
+    animation: appear 2s linear 1;
+    animation-fill-mode: forwards;
+}
+
+#pic2.visible2 {
+    animation: appear 2.5s linear 2s 1;
+    animation-fill-mode: forwards;
+}
+#pic3.visible3 {
+    animation: appear 2.5s linear 3.5s 1;
+    animation-fill-mode: forwards;
+}
+#pic4.visible4 {
+    animation: appear 2.5s linear 4.5s 1;
+    animation-fill-mode: forwards;
+}
+#pic5.visible5 {
+    animation: appear 1.5s linear 5.5s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* 過場動畫結束 */
+
+.contentBox .row {
+    justify-content: center;
+}
+
+.contentBox .Txt {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.contentBox .contenItem {
+    padding: 3rem 10px;
+}
+
+.contentBox .Txt .titleBox {
+    margin-bottom: 1.5rem;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.contentBox .Txt .titleBox h2 {
+    font-size: 1.6rem;
+    color: #4d4d4d;
+}
+
+.contentBox .Txt .titleBox h2 span {
+    display: block;
+    color: #80a21f;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.contentBox .Txt p {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #4d4d4d;
+}
+
+.contenItem .bird {
+    position: absolute;
+    top: 15%;
+    left: -10%;
+    width: 30px;
+    font-size: 0;
+    opacity: 0;
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+.contenItem .bird2 {
+    position: absolute;
+    top: 15%;
+    right: -10%;
+    width: 30px;
+    font-size: 0;
+    opacity: 0;
+    transform: rotateY(180deg);
+    animation-name: move2;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+.contenItem .bird3 {
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    width: 30px;
+    font-size: 0;
+    opacity: 0;
+    animation-name: move3;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+.contenItem .bird4 {
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+    width: 30px;
+    font-size: 0;
+    opacity: 0;
+    animation-name: move4;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes move {
+    0% {
+        top: 15%;
+        left: -10%;
+        opacity: 0;
+    }
+
+    25% {
+        top: 5%;
+        left: 25%;
+        opacity: 1;
+    }
+
+    75% {
+        top: 20%;
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        top: 15%;
+        right: -10%;
+        opacity: 0;
+    }
+
+    25% {
+        top: 5%;
+        right: 25%;
+        opacity: 1;
+    }
+
+    75% {
+        top: 20%;
+        right: 100%;
+        opacity: 0;
+    }
+}
+@keyframes move3 {
+    0% {
+        top: 0%;
+        left: 20%;
+        opacity: 0;
+    }
+
+    25% {
+        top: 50%;
+        left: 30%;
+        opacity: 1;
+    }
+
+    75% {
+        top: 100%;
+        left: 10%;
+        opacity: 0;
+    }
+}
+@keyframes move4 {
+    0% {
+        bottom: 0%;
+        right: 20%;
+        opacity: 0;
+    }
+
+    25% {
+        bottom: 50%;
+        right: 30%;
+        opacity: 1;
+    }
+
+    75% {
+        bottom: 100%;
+        right: 10%;
+        opacity: 0;
+    }
+}
+
+.Img a {
+    display: block;
+}
+
+.page02 {
+    position: relative;
+}
+
+.page02::after {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    right: -30%;
+    width: 20%;
+    padding-top: 10%;
+    background-image: url(../img/tree01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ListIcon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page06 .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ListIcon .item {
+    width: 100%;
+}
+
+.ListIcon .item .InnerImg {
+    width: 100%;
+    padding-top: 115%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.page06 .Txt {
+    padding-left: 15%;
+}
+
+.page07 {
+    position: relative;
+    z-index: 3;
+}
+
+.page07::after {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: -34%;
+    width: 22%;
+    padding-top: 40%;
+    background-image: url(../img/tree02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.page07::before {
+    content: '';
+    position: absolute;
+    bottom: 5%;
+    right: -31%;
+    width: 35%;
+    padding-top: 58%;
+    background-image: url(../img/tree03.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.page08 {
+    position: relative;
+}
+
+.page08::after {
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    right: -30%;
+    width: 20%;
+    padding-top: 10%;
+    background-image: url(../img/tree01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ImgIofo2 {
+    position: absolute;
+    width: 20%;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 80%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 80%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 80%);
+    color: #fff;
+    padding: 2%;
+    text-align: center;
+}
+
+.ImgIofo2 h5 b {
+    font-size: 3rem;
+}
+
+.ImgIofo2 p {
+    /*font-size: 14px;*/
+    margin: 0;
+    text-align: center;
+}
+
+.ImgIofo2.left {
+    left: 10px;
+}
+
+.ImgIofo2.top {
+    top: 10px;
+}
+
+.ImgIofo2.bottom {
+    bottom: 10px;
+}
+
+.ImgIofo2.right {
+    right: 10px;
+}
+
+.ImgIofo.top {
+    top: 0;
+    bottom: auto;
+}
+
+@media screen and (max-width: 991px) {
+    .Shadow {
+        padding-top: 100vh;
+        background-size: cover;
+    }
+
+    .ListIcon .item {
+        width: 50%;
+    }
+
+    .logoArea,
+    .BannerTxt {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Anblock .left {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 15%;
+    }
+
+    .Anblock .right {
+        padding-bottom: 15%;
+        padding-right: 5%;
+        padding-top: 30%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .Anblock::after {
+        top: 0%;
+        left: 0%;
+        width: 98%;
+        padding-top: 83%;
+        background-image: url(../images/Banner/leaves-m.png);
+    }
+
+    .BannerTxt .content p {
+        text-align: center;
+    }
+
+    .logoTxt::before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 75%;
+        background-color: #4d4d4d;
+        margin: 10% auto;
+        margin-top: 20%;
+    }
+
+    .logoTxt {
+        border-left: 0px solid #4d4d4d;
+        padding-left: 0%;
+    }
+
+    .logoTxt p {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        text-align: center;
+        line-height: 150%;
+    }
+
+    .contentBox .Txt {
+        width: 100%;
+    }
+
+    .contentBox .Txt p {
+        font-size: 0.8rem;
+    }
+
+    .contenItem .Txt p span {
+        display: block;
+        font-size: 0.8rem;
+    }
+
+    .Anblock {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 56%;
+        margin: 0 auto;
+    }
+
+    #pic {
+        background-image: url(../images/Banner/pic02-m.png) !important;
+    }
+
+    #pic2 {
+        background-image: url(../images/Banner/pic03-m.png) !important;
+    }
+
+    #pic3 {
+        background-image: url(../images/Banner/pic04-m.png) !important;
+    }
+
+    #pic4 {
+        background-image: url(../images/Banner/pic05-m.png) !important;
+    }
+
+    #pic5 {
+        background-image: url(../images/Banner/pic06-m.png) !important;
+    }
+
+    .BannerTxt .Title h4 {
+        font-size: 1.5rem;
+    }
+
+    .BannerTxt .content p {
+        font-size: 0.8rem;
+        line-height: 180%;
+    }
+
+    .page07::before {
+        content: unset;
+    }
+
+    .contentBox .Txt .titleBox h2 {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 480px) {
+
+    .slick-prev::before,
+    .slick-next::before {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+
+    .ImgIofo {
+        font-size: 9px;
+    }
+
+    .ImgIofo2 {
+        width: 30%;
+        padding: 10px;
+    }
+
+    .ImgIofo2 h5 b {
+        font-size: 2rem;
+    }
+
+    .ImgIofo2 p {
+        font-size: 10px;
+    }
+
+    .page06 .Txt {
+        padding-left: 0%;
+    }
+}
+
+/* 2532x1170 pixels at 460ppi */
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        .Anblock .right {
+            padding-top: 40%;
+        }
+     }

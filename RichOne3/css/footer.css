@@ -1,0 +1,212 @@
+footer {
+    /* background-image: url(../images/bg2.jpg); */
+    background-color: #19A2AA;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+/*a {
+    color: #444;
+    font-weight: 300;
+}
+
+a:hover {
+    color: #222;
+    text-decoration: none;
+}
+*/
+
+footer .Orangutan_02 {
+    position: absolute;
+    top: 0;
+}
+
+footer .Orangutan_02 .head {
+    -webkit-animation: 1.5s wink both infinite;
+    animation: 1.5s wink both infinite;
+}
+
+.copyright {
+    /*margin-top: 5%;*/
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 5%;
+}
+
+footer {
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+footer:before {
+    content: '';
+    width: 100%;
+    height: 30px;
+    /*background-image: url(../images/banner/bottom_before.svg);*/
+    background-repeat: repeat-x;
+    background-size: 100%;
+    background-position: bottom;
+    position: absolute;
+    bottom: 99%;
+}
+
+footer .title {
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 3%;
+    /*z-index: 11; */
+}
+
+footer .footer_logo {
+    width: 50%;
+    padding-bottom: 15%;
+}
+
+footer .contactBox .infoBox .li_icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 35px;
+    margin-bottom: 1rem;
+}
+
+footer .contactBox .infoBox .li_icon .iconImg {
+    position: absolute;
+    left: 0;
+}
+
+footer .contactBox .infoBox .item .sosial .icon a img,
+footer .contactBox .infoBox .iconImg {
+    width: 15%;
+    max-width: 30px;
+}
+
+footer .contactBox {
+    z-index: 2;
+    padding: 10%;
+    color: #ad755c;
+    background-color: transparent;
+}
+
+footer .contactBox::before {
+    content: '';
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    position: absolute;
+    border: 1px solid #fff;
+}
+
+footer .contactBox .title h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Noto Serif TC', serif;
+    margin-bottom: 3%;
+    letter-spacing: 2px;
+}
+
+footer .contactBox .infoBox .item {
+    padding-bottom: 1.3rem;
+    color: #fff;
+}
+
+footer .contactBox h4 {
+    color: #fff;
+    font-size: 1rem;
+}
+
+footer .contactBox h4 span {
+    /*font-family: 'Playfair Display', 'Times New Roman', serif;*/
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+footer .contactBox h4:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+footer .contactBox p {
+    /*letter-spacing: 2px;*/
+    line-height: 1.5;
+    color: #fff;
+    font-size: 1rem;
+    text-align: left;
+}
+
+footer .contactBox #contact .title h4 {
+    border-bottom: 2px solid #b3a895;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+footer a {
+    display: inline-block;
+    color: #fff;
+}
+
+@media(max-width: 991px) {
+    footer:before {
+        bottom: 100%;
+        background-size: 100%;
+        background-position: bottom;
+    }
+    footer .contactBox h4 span {
+        font-size: 1.2rem;
+    }
+    footer .contactBox a span {
+        display: block;
+    }
+    footer .contactBox .infoBox .item .sosial .icon a span {
+        display: none;
+    }
+    footer .contactBox .infoBox .item .sosial .icon a img {
+        width: 20%;
+    }
+}
+
+@media(max-width: 768px) {
+    .content .Item .Txt h3.CATCH:after {
+        margin: 10px 0;
+    }
+    footer .contactBox .title h3 {
+        margin-bottom: 1.5rem;
+    }
+    footer .contactBox:after {
+        font-size: 14px;
+    }
+    footer .contactBox {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+}
+
+@media(max-width: 583px) {
+    footer .contactBox .title h3 {
+        font-size: 1.4rem;
+    }
+    .copyright span {
+        display: block;
+    }
+}
+
+@media(max-width: 480px) {
+    footer {
+        padding-top: 15%;
+    }
+    footer .title img {
+        width: 70%;
+    }
+    footer .contactBox h4 span {
+        letter-spacing: 1px;
+    }
+    footer .contactBox .infoBox .item .sosial .icon a {
+        font-size: 0.8rem;
+    }
+}

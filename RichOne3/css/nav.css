@@ -1,0 +1,144 @@
+.navbar {
+    background-color: #DCDCDC !important;
+    /*box-shadow: none !important;*/
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
+
+
+    opacity: 0;
+    transform: translateY(-10px);
+    transition:all 0.5s;
+
+}
+
+.Sticky{
+    opacity: 1;
+    transform: translateY(0px);
+    transition:all 0.5s;
+}
+
+
+
+.navbar .navbar-brand {
+    padding: 10px 2%;
+}
+
+.navbar .btn {
+    padding: 20px 0px;
+    min-width: 150px;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #666666;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.navbar .btn:hover {
+    color: #eb662a;
+}
+
+.btn-info,
+.btn-dark {
+    color: #fff !important;
+}
+
+.tellLink {
+    color: #555;
+    padding: 10px 2rem;
+    font-size: 20px;
+}
+
+.tellLink:hover {
+    color: #17a2b8;
+}
+
+.tellLink span {
+    display: block;
+    font-size: 10px;
+}
+
+.btn-fb {
+    background-color: #3865b2;
+}
+
+.btn-fb:hover {
+    background-color: #19499c;
+}
+
+.m_contactBox {
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.m_contactBox a {
+    width: calc(100%/2);
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.m_contactBox a+a {
+    border-left: 1px solid #999;
+}
+
+.navbar .btn span {
+    display: block;
+    font-size: 1rem;
+}
+
+
+@media(max-width: 991px) {
+    .navbar {
+
+        top: auto;
+        bottom: 0;
+            background-color: #333 !important;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .form-inline {
+        width: 100%;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .navbar .btn {
+        font-size: 14px;
+        min-width: auto;
+        width: calc(100%/4);
+        color: #fff;
+    }
+
+    .navbar .btn span {
+        display: none;
+    }
+}
