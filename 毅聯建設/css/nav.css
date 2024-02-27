@@ -1,0 +1,130 @@
+.logo {
+    width: 110px;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 100%;
+    font-size: 0;
+}
+
+.Menu {
+    width: 100px;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 103;
+    cursor: pointer;
+}
+
+.Menu img {
+    width: 100%;
+    font-size: 0;
+}
+
+.A {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+.A.apear {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.B {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.B.apear {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+.linkArea {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 200px;
+    background-color: transparent;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+
+.linkArea.move {
+    transform: translateX(0%);
+    transition: all .5s ease-in-out;
+}
+
+.linkArea.Color {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-nav {
+    width: 100%;
+    align-items: center;
+}
+
+.nav-item {
+    width: 100%;
+    color: #fff;
+    padding-left: 15%;
+    max-height: 40px;
+    overflow-y: hidden;
+    transform: translateY(-0px);
+    transition: all .5s ease-in-out;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    font-size: 1rem;
+    text-shadow: 1px 1px #000;
+}
+
+.nav-link::before {
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+    border-right: 5px solid transparent;
+    opacity: 0;
+}
+
+.nav-item:hover .nav-link {
+    text-decoration: none;
+    transform: translateY(-40px);
+    transition: all .5s ease-in-out;
+}
+
+@media screen and (max-width:991px) {
+    .logo {
+        width: 90px;
+    }
+    .Menu {
+        width: 90px;
+    }
+    .linkArea {
+        width: 100%;
+        background-color: rgba(0, 0, 0, .8);
+    }
+    .nav-item {
+        padding-left: 0%;
+        max-height: 40px;
+    }
+    .nav-item .nav-link {
+        text-align: center;
+    }
+}

@@ -1,0 +1,117 @@
+.nav-item:nth-child(3) .nav-link::before {
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+    border-right: 5px solid transparent;
+    opacity: 1;
+}
+
+.wrapper {
+    background-image: url(../images/img/Performance/pic01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.PerformanceArea {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5% 0%;
+}
+
+.PerformanceArea .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PerformanceImg {
+    width: 100%;
+    position: relative;
+}
+
+.PerformanceImg .InnerImg {
+    width: 100%;
+    padding-top: 130%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.PerformanceTxt {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.PerformanceTxt .title {
+    margin-bottom: 10%;
+}
+
+.PerformanceTxt small {
+    color: #fff;
+}
+
+.PerformanceTxt h4 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    padding: 2% 0%;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.PerformanceTxt .Date {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.content p {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 180%;
+}
+
+.Back {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333333;
+    text-decoration: underline;
+    margin-top: 10%;
+}
+
+.Back::after {
+    content: '>';
+    display: inline-block;
+    color: #fff;
+    transform: translateX(0%);
+}
+
+.Back a {
+    color: #fff;
+}
+
+.Back a:hover {
+    text-decoration: none;
+}
+
+.Back:hover.Back::after {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width:991px) {
+    .PerformanceArea {
+        width: 80%;
+        padding: 20% 0%;
+    }
+    .PerformanceTxt {
+        width: 100%;
+        margin-top: 5%;
+    }
+}

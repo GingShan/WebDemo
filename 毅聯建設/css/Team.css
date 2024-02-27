@@ -1,0 +1,171 @@
+.nav-item:nth-child(2) .nav-link::before {
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+    border-right: 5px solid transparent;
+    opacity: 1;
+}
+
+.wrapper {
+    background-color: #f2f2f2;
+}
+
+.Banner {
+    width: 100%;
+    position: relative;
+    font-size: 0;
+}
+
+.Banner .InnerImg {
+    width: 100%;
+    padding-top: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 0;
+}
+
+.Banner .BannerTxt {
+    width: 100%;
+    position: absolute;
+    top: 66%;
+    left: 10%;
+    text-align: left;
+}
+
+.BannerTxt h4 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 2px 2px rgba(0, 0, 0, .8);
+}
+
+.BannerTxt p {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 2px 2px rgba(0, 0, 0, .8);
+    padding-left: 0.7%;
+    letter-spacing: 2px;
+    border-left: 2px solid #fff;
+}
+
+.TitleArea {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    padding: 5% 0%;
+}
+
+.TitleArea .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Title span {
+    font-size: 3rem;
+    color: #333333;
+    font-family: 'Noto Serif TC', serif;
+    vertical-align: middle;
+}
+
+.Title span:nth-child(1)::after {
+    content: '';
+    display: inline-block;
+    width: 14%;
+    height: 1px;
+    background-color: #333333;
+    vertical-align: middle;
+    margin: 0% 1%;
+}
+
+.SubTitle {
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: #333333;
+    padding-bottom: 3%;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #333333;
+    margin: 0;
+    line-height: 150%;
+}
+
+.TeamArea {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    padding: 5% 0%;
+}
+
+.TeamArea a:hover {
+    text-decoration: none;
+}
+
+.TeamTxt {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.TeamTxt .CH {
+    font-size: 1.2rem;
+    color: #808080;
+}
+
+.TeamTxt .EN {
+    font-size: 1rem;
+    color: #808080;
+}
+
+.TeamArea .TeamImg {
+    width: 100%;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.TeamImg .InnerImg {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.link {
+    width: 20px;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+
+@media screen and (max-width:991px) {
+    .Banner .InnerImg {
+        padding-top: 70%;
+        background-attachment: scroll;
+    }
+    .Title span {
+        font-size: 2rem;
+    }
+    .SubTitle {
+        font-size: 1rem;
+    }
+    .content p {
+        font-size: 0.8rem;
+    }
+    .TeamImg .InnerImg {
+        width: 100%;
+    }
+    .TeamTxt .CH {
+        font-size: 1rem;
+    }
+    .TeamTxt .EN {
+        font-size: 0.8rem;
+    }
+}

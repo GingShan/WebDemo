@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@600&display=swap');
+
+/*
+
+黑體
+font-family: 'Noto Sans TC', sans-serif;
+
+明體
+font-family: 'Noto Serif TC', serif;
+
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}

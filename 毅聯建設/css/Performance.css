@@ -1,0 +1,114 @@
+.nav-item:nth-child(3) .nav-link::before {
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+    border-right: 5px solid transparent;
+    opacity: 1;
+}
+
+.wrapper {
+    background-image: url(../images/img/Performance/pic01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Banner .BannerTxt {
+    width: 100%;
+    text-align: left;
+}
+
+.BannerTxt h4 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 2px 2px rgba(0, 0, 0, .8);
+}
+
+.BannerTxt p {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 2px 2px rgba(0, 0, 0, .8);
+    padding-left: 0.7%;
+    letter-spacing: 2px;
+    border-left: 2px solid #fff;
+}
+
+.PerformanceArea {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5% 0%;
+}
+
+.PerformanceArea .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PerformanceCard {
+    position: relative;
+}
+
+.PerformanceCard a:hover {
+    text-decoration: none;
+}
+
+.PerformanceCard .PerformanceTxt {
+    width: 100%;
+    position: relative;
+    padding-top: 15%;
+}
+
+.PerformanceCard .PerformanceImg {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.PerformanceCard .PerformanceImg .InnerImg {
+    width: 100%;
+    padding-top: 130%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.PerformanceCard .PerformanceTxt {
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.PerformanceCard .PerformanceTxt p {
+    margin: 0;
+    color: #fff;
+}
+
+.PerformanceCard .PerformanceTxt .CH {
+    font-size: 1.2rem;
+}
+
+.PerformanceCard .PerformanceTxt .EN {
+    font-size: 1rem;
+}
+
+.PerformanceCard::after {
+    content: '';
+    position: absolute;
+    bottom: 23%;
+    left: 0%;
+    width: 100%;
+    height: 2px;
+    background-color: #cccccc;
+}
+
+@media screen and (max-width:991px) {
+    .PerformanceCard::after {
+        content: unset;
+    }
+    .PerformanceArea {
+        padding: 40% 0%;
+    }
+}

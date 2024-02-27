@@ -1,0 +1,210 @@
+.page {
+    width: 100%;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.page .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TableArea {
+    width: 70%;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    color: #333333;
+}
+
+td {
+    padding: 3%;
+    text-align: justify;
+}
+
+.Banner {
+    width: 100%;
+    position: relative;
+    font-size: 0;
+}
+
+.Banner .InnerImg {
+    width: 100%;
+    padding-top: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 0;
+}
+
+.Banner .BannerTxt {
+    width: 100%;
+    position: absolute;
+    top: 66%;
+    left: 10%;
+    text-align: left;
+}
+
+.BannerTxt h4 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 2px 2px rgba(0, 0, 0, .8);
+}
+
+.BannerTxt p {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 2px 2px rgba(0, 0, 0, .8);
+    padding-left: 0.7%;
+    letter-spacing: 2px;
+    border-left: 2px solid #fff;
+}
+
+.ConstructArea {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5% 0%;
+}
+
+.Txt {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Title span {
+    font-size: 3rem;
+    color: #333333;
+    font-family: 'Noto Serif TC', serif;
+    vertical-align: middle;
+}
+
+.Title span:nth-child(1)::after {
+    content: '';
+    display: inline-block;
+    width: 14%;
+    height: 1px;
+    background-color: #333333;
+    vertical-align: middle;
+    margin: 0% 1%;
+}
+
+.SubTitle {
+    font-size: 1.2rem;
+    color: #333333;
+    letter-spacing: 2px;
+    font-family: 'Noto Serif TC', serif;
+    padding: 3% 0%;
+}
+
+.Content {
+    padding-bottom: 3%;
+}
+
+.Content p {
+    font-size: 1rem;
+    color: #333333;
+    text-align: justify;
+    margin: 0;
+    line-height: 180%;
+}
+
+.Content p.blue {
+    font-weight: bold;
+    color: #0b3258;
+}
+
+.Content ul li {
+    list-style: square;
+}
+
+.ConstructImg {
+    width: 100%;
+    position: relative;
+    font-size: 0;
+}
+
+.ConstructImg img {
+    width: 100%;
+}
+
+.Back {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333333;
+    text-decoration: underline;
+}
+
+.Back::after {
+    content: '>';
+    display: inline-block;
+    color: #333333;
+    transform: translateX(0%);
+}
+
+.Back a {
+    color: #333333;
+}
+
+.Back a:hover {
+    text-decoration: none;
+}
+
+.Back:hover.Back::after {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    form {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+
+@media screen and (max-width:991px) {
+    .Banner .InnerImg {
+        padding-top: 70%;
+        background-attachment: scroll;
+    }
+    .TableArea {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .Txt {
+        width: 100%;
+    }
+    .page {
+        margin-bottom: 10%;
+    }
+    .Title span {
+        font-size: 2rem;
+    }
+    .SubTitle {
+        font-size: 1rem;
+    }
+    .Content p {
+        font-size: 0.8rem;
+    }
+    td {
+        font-size: 0.8rem;
+    }
+    th {
+        font-size: 1rem;
+    }
+}

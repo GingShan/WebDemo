@@ -1,0 +1,211 @@
+.nav-item:nth-child(2) .nav-link::before {
+    content: '';
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+    border-right: 5px solid transparent;
+    opacity: 1;
+}
+
+.Banner {
+    width: 100%;
+    position: relative;
+    font-size: 0;
+}
+
+.Banner .InnerImg {
+    width: 100%;
+    padding-top: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 0;
+}
+
+.TitleArea {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5% 0%;
+}
+
+.TitleArea .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Title span {
+    font-size: 2rem;
+    color: #333333;
+    font-family: 'Noto Serif TC', serif;
+    vertical-align: middle;
+}
+
+.Title span:nth-child(1)::after {
+    content: '';
+    display: inline-block;
+    width: 14%;
+    height: 1px;
+    background-color: #333333;
+    vertical-align: middle;
+    margin: 0% 1%;
+}
+
+.Title .link {
+    display: inline-block;
+    width: 20px;
+    font-size: 0;
+}
+
+.SubTitle {
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: #333333;
+    padding: 3% 0%;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #333333;
+    margin: 0;
+    line-height: 180%;
+}
+
+.TeamInPic {
+    width: 100%;
+}
+
+.TeamInPic .InnerImg {
+    width: 100%;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.TeamCard {
+    width: 100%;
+    min-height: 40vh;
+    margin: 0 auto;
+    padding: 5% 0%;
+    background-color: #f2f2f2;
+}
+
+.CardTitle {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.CardTitle .content {
+    padding: 3% 0%;
+}
+
+.CardArea {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.CardArea a:hover {
+    text-decoration: none;
+}
+
+.TeamTxt {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.TeamTxt .CH {
+    font-size: 1.2rem;
+    color: #808080;
+}
+
+.TeamTxt .EN {
+    font-size: 1rem;
+    color: #808080;
+}
+
+.CardArea .TeamImg {
+    width: 100%;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.TeamImg .InnerImg {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #333333;
+}
+
+.Back {
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333333;
+    text-decoration: underline;
+}
+
+.Back::after {
+    content: '>';
+    display: inline-block;
+    color: #333333;
+    transform: translateX(0%);
+}
+
+.Back a {
+    color: #333333;
+}
+
+.Back a:hover {
+    text-decoration: none;
+}
+
+.Back:hover.Back::after {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    form {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+
+@media screen and (max-width:991px) {
+    .TitleArea {
+        width: 90%;
+    }
+    .Title .link {
+        width: 15px;
+    }
+    .Title span {
+        font-size: 1.5rem;
+    }
+    .SubTitle {
+        font-size: 1rem;
+    }
+    .content p {
+        font-size: 0.8rem;
+    }
+    .Info {
+        padding-bottom: 5%;
+    }
+    .CardTitle {
+        width: 90%;
+    }
+    .TeamImg .InnerImg {
+        width: 100%;
+    }
+}
